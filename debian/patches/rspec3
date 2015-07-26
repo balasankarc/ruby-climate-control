@@ -1,0 +1,15 @@
+Description: Make tests follow RSpec 3 syntax
+Author: Balasankar C <balasankarc@autistici.org>
+Last-Update: 2015-07-25
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/spec/acceptance/climate_control_spec.rb
++++ b/spec/acceptance/climate_control_spec.rb
+@@ -9,6 +9,6 @@
+     end
+ 
+     expect(ENV['FOO']).to be_nil
+-    expect(block_run).to be_true
++    expect(block_run).to be_truthy
+   end
+ end

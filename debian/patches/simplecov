@@ -1,0 +1,14 @@
+Description: Disable simplecov while running tests
+Author: Balasankar C <balasankarc@autistici.org>
+Last-Update: 2015-07-25
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/spec/spec_helper.rb
++++ b/spec/spec_helper.rb
+@@ -1,6 +1,3 @@
+-require 'simplecov'
+-SimpleCov.start
+-
+ $LOAD_PATH << File.join(File.dirname(__FILE__), '..', 'lib')
+ $LOAD_PATH << File.join(File.dirname(__FILE__))
+ 
