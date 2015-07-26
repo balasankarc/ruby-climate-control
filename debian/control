@@ -22,5 +22,8 @@ Depends: ruby | ruby-interpreter,
          ruby-activesupport (>= 3.0),
          ${misc:Depends},
          ${shlibs:Depends}
-Description: Modify your ENV easily with ClimateControl
- Modify your ENV
+Description: library to easily manage environment variables
+ This gem enables the users to manage their environment variables from Ruby
+ applications. Climate Control modifies environment variables only within 
+ the context of the block, ensuring values are managed properly and 
+ consistently.
